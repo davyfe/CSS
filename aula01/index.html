@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FF Contas Premium</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+.login-btn {
+    background: #22c55e;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* BANNER COM IMAGEM REAL */
+.banner {
+    text-align: center;
+    padding: 120px 20px;
+    background: url('https://images6.alphacoders.com/118/1188099.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.banner h1,
+.banner p,
+.banner button {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin-bottom: 20px;
+    color: #cbd5f5;
+}
+
+.banner button {
+    padding: 12px 25px;
+    border: none;
+    background: #22c55e;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* PRODUTOS */
+.produtos {
+    padding: 50px 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARDS COM IMAGEM REAL */
+.card {
+    background: #020617;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #1e293b;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #22c55e;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background: #22c55e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🔥 FF CONTAS</div>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Contas</a>
+        <a href="#">Promoções</a>
+        <a href="#">Suporte</a>
+    </nav>
+    <button class="login-btn">Entrar</button>
+</header>
+
+<section class="banner">
+    <h1>Contas Raras de Free Fire</h1>
+    <p>Skins exclusivas, passes antigos e muito mais!</p>
+    <button>Ver Ofertas</button>
+</section>
+
+<section class="produtos">
+    <h2>🔥 Contas em Destaque</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images6.alphacoders.com/118/1188100.jpg">
+            <div class="card-content">
+                <h3>Conta Angelical</h3>
+                <p>Level 70 • Skins raras • Passe antigo</p>
+                <span>R$ 120,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images6.alphacoders.com/118/1188098.jpg">
+            <div class="card-content">
+                <h3>Conta Veterana</h3>
+                <p>Level 65 • Emotes raros • Muitas skins</p>
+                <span>R$ 95,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images6.alphacoders.com/118/1188102.jpg">
+            <div class="card-content">
+                <h3>Conta Full Elite</h3>
+                <p>Level 80 • Full itens • Raríssima</p>
+                <span>R$ 200,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 FF Contas - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
