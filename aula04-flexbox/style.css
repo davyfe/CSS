@@ -1,15 +1,63 @@
-.container{
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  background-color: lightgrey;
-}
+.container {
+  display: flex; /* Define o container como um flex container */
+  flex-direction: row; /* Define a direção dos itens como linha (horizontal) */
+  flex-wrap: nowrap;
+  justify-content: center;
+  /*flex-flow: row wrap-reverse;*/ /* Define a direção dos itens como linha (horizontal) e permite que os itens quebrem para a próxima linha, invertendo a ordem de quebra */
+  gap:2px 10px;
+  width: 100%; /* Define a largura do container como 100% do elemento pai */
+  background-color: lightgray; /* Define a cor de fundo do container */
+  height: 200px;
+} 
 
 .caixa{
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  color: white;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  width: 100px; /* Define a largura de cada caixa como 100 pixels */
+  height: 100px; /* Define a altura de cada caixa como 100 pixels */
+  background-color: blue; /* Define a cor de fundo de cada caixa como azul */
+  border: 1px solid black; /* Define uma borda preta de 1 pixel ao redor de cada caixa */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Adiciona uma sombra às caixas para dar um efeito de profundidade */
+  color: white; /* Define a cor do texto dentro das caixas como branco */
+}
+
+.container-2 {
+    display: flex; /* Define o container como um flex container */
+    flex-direction: column; /* Define a direção dos itens como coluna (vertical) e inverte a ordem */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha/coluna e inverte a ordem de quebra */
+    background-color: lightgreen; /* Define a cor de fundo do container como verde claro */
+    height: 100vh; /* Define a altura do container como 100% da altura da viewport (tela) */
+    align-content: space-evenly;
+    gap: 10px 5px;
+}
+
+.caixa-verde {
+    width: 100px; /* Define a largura de cada caixa verde como 100 pixels */
+    height: 100px; /* Define a altura de cada caixa verde como 100 pixels */
+    background-color: green; /* Define a cor de fundo de cada caixa verde como verde */
+    border: 1px solid black; /* Define uma borda preta de 1 pixel ao redor de cada caixa verde */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Adiciona uma sombra às caixas para dar um efeito de profundidade */
+}
+
+.item {
+  order: -1;
+}
+
+.grow-item {
+  flex-grow: 1;
+}
+
+.grow-item-2 {
+  flex-grow: 2;
+}
+
+.shrink-item {
+  flex-shrink: 0;
+}
+
+
+.shrink-item-2 {
+  flex-shrink: 2;
+}
+
+.item-align {
+  align-self: flex-end;
 }
